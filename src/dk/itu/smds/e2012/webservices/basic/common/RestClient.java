@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package dk.itu.smds.e2012.webservices.basic.client;
+package dk.itu.smds.e2012.webservices.basic.common;
 
 
 import java.io.IOException;
@@ -18,8 +18,6 @@ import java.net.URL;
 public class RestClient {
 
     public String DoRestCall(String requestUri, String httpMethod, String postdata) {
-        //
-
 
         String response = "";
         try {
@@ -55,13 +53,8 @@ public class RestClient {
             System.err.println(e.toString());
         }
         return response;
-
-
     }
 
-   
-    
-    
     private String ReceiveResponse(HttpURLConnection connection) throws IOException {
         String response = "";
         try {
