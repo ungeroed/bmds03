@@ -13,14 +13,23 @@ import javax.xml.ws.Endpoint;
 
 
 
-@WebService(name="helloService", targetNamespace = "http://smds-e2012.itu.dk/webservices/basicsample",serviceName="helloService")
+@WebService(name="helloService", targetNamespace = "localhost",serviceName="helloService")
 public class HelloService 
 {
-	@WebMethod()
-	public String helloOperation(String name) {
-		return "Hello " + name + "!";
-	}
-	
+    @WebMethod()
+    public String GetAttendantTasks(String attendantId, int serviceOption){
+        return "";
+    }
+
+    @WebMethod()
+    public void CreateTask(String taskXml, int serviceOption){
+
+    }
+
+    @WebMethod()
+    public void DeleteTask(String taskId, int serviceOption){
+
+    }
 	
 	@WebMethod(operationName="httpRequest")
 	 public String excutePost(String targetURL, String urlParameters)

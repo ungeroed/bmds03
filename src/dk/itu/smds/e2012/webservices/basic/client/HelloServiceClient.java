@@ -12,15 +12,12 @@ public class HelloServiceClient {
     public static void main(String[] args) {
 
 
-        QName service =
-                new QName("http://smds-e2012.itu.dk/webservices/basicsample", "helloService");
-        QName port =
-                new QName("http://smds-e2012.itu.dk/webservices/basicsample", "helloServicePort");
+        QName service =new QName("http://trustcare.itu.dk/task-manager-soap/", "TaskManagerService");
+        QName port = new QName("http://smds-e2012.itu.dk/webservices/basicsample", "helloServicePort");
+
         String endpointAddress = "http://localhost:8085/labexercises/hello";
         Service webservice = Service.create(service);
         webservice.addPort(port, SOAPBinding.SOAP11HTTP_BINDING, endpointAddress);
-
-
 
 
         try {
@@ -37,11 +34,8 @@ public class HelloServiceClient {
 
             SOAPElement name;
 
-
             name = content.addChildElement("arg0");
             name.setTextContent("Rao");
-
-
 
 
             Utils.print(request);
