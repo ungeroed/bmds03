@@ -23,7 +23,7 @@ public class HelloService
 	
 	
 	@WebMethod(operationName="httpRequest")
-	 public static String excutePost(String targetURL, String urlParameters)
+	 public String excutePost(String targetURL, String urlParameters)
 	  {
 	    URL url;
 	    HttpURLConnection connection = null;  
