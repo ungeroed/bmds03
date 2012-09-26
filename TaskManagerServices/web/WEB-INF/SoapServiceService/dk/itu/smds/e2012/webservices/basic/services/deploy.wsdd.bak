@@ -1,0 +1,38 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from SoapServiceService WSDL service -->
+
+  <service name="SoapService" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://services.basic.webservices.e2012.smds.itu.dk"/>
+      <parameter name="wsdlServiceElement" value="SoapServiceService"/>
+      <parameter name="schemaQualified" value="http://services.basic.webservices.e2012.smds.itu.dk"/>
+      <parameter name="wsdlServicePort" value="SoapService"/>
+      <parameter name="className" value="dk.itu.smds.e2012.webservices.basic.services.SoapServiceSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="SoapService"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getAttendantTasks" qname="operNS:GetAttendantTasks" xmlns:operNS="http://services.basic.webservices.e2012.smds.itu.dk" returnQName="retNS:GetAttendantTasksReturn" xmlns:retNS="http://services.basic.webservices.e2012.smds.itu.dk" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:attendantId" xmlns:pns="http://services.basic.webservices.e2012.smds.itu.dk" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:serviceOption" xmlns:pns="http://services.basic.webservices.e2012.smds.itu.dk" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="createTask" qname="operNS:CreateTask" xmlns:operNS="http://services.basic.webservices.e2012.smds.itu.dk" soapAction="" >
+        <parameter qname="pns:taskXml" xmlns:pns="http://services.basic.webservices.e2012.smds.itu.dk" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:serviceOption" xmlns:pns="http://services.basic.webservices.e2012.smds.itu.dk" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="deleteTask" qname="operNS:DeleteTask" xmlns:operNS="http://services.basic.webservices.e2012.smds.itu.dk" soapAction="" >
+        <parameter qname="pns:taskId" xmlns:pns="http://services.basic.webservices.e2012.smds.itu.dk" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:serviceOption" xmlns:pns="http://services.basic.webservices.e2012.smds.itu.dk" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="deleteTask createTask getAttendantTasks"/>
+
+  </service>
+</deployment>
