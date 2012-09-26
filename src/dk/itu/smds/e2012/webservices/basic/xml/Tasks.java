@@ -16,5 +16,7 @@ public class Tasks implements Serializable {
     @XmlElement(name = "task")
     public ArrayList<Task> tasks;
 
-    public Tasks(){}
+    public Tasks(){
+    	tasks = new ArrayList<Task>();
+    }
 }

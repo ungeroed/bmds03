@@ -34,7 +34,9 @@ public class Task implements Serializable {
 	@XmlElement(name = "user")
 	public ArrayList<String> attendants;
 
-    public Task(){}
+    public Task(){
+    	this.attendants = new ArrayList<String>();
+    }
 
     public Task(String id, String name, String date, String status, String description){
         this.attendants = new ArrayList<String>();

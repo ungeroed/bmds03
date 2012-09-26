@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="bmds03" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d97c8c1c-9aef-4617-90e2-0b2c004f69eb" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/RestClient.java" afterPath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/common/RestClient.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/HelloMyClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/HelloServiceClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/TrustcareSoapClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/server/HelloClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/server/HelloService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/HelloServiceClient.java" afterPath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/HelloServiceClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/server/HelloService.java" afterPath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/server/HelloService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/TrustcareRestClient.java" afterPath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/TrustcareRestClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/xml/Task.java" afterPath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/xml/Task.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/xml/TaskSerializer.java" afterPath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/xml/TaskSerializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/xml/Tasks.java" afterPath="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/xml/Tasks.java" />
     </list>
     <ignored path="WebserviceJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +80,26 @@
     <favorites_list name="WebserviceJava" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="TestREST.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/TestREST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="13" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestSoapClient.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tests/TestSoapClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="49" selection-start="947" selection-end="947" vertical-scroll-proportion="0.68944097">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -91,6 +127,7 @@
         <option value="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/server/HelloClient.java" />
         <option value="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/HelloServiceClient.java" />
         <option value="$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/TrustcareSoapClient.java" />
+        <option value="$PROJECT_DIR$/src/tests/TestSoapClient.java" />
       </list>
     </option>
   </component>
@@ -102,10 +139,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="13" />
-    <option name="y" value="49" />
-    <option name="width" value="1351" />
-    <option name="height" value="681" />
+    <option name="x" value="1371" />
+    <option name="y" value="2" />
+    <option name="width" value="1670" />
+    <option name="height" value="671" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -134,16 +171,11 @@
     </navigator>
     <panes>
       <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane subId="Project Files" />
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,7 +190,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BMDS02" />
+              <option name="myItemId" value="bmds03" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -168,15 +200,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BMDS02" />
+              <option name="myItemId" value="bmds03" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -186,43 +214,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BMDS02" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebserviceJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BMDS02" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebserviceJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BMDS02" />
+              <option name="myItemId" value="bmds03" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -230,73 +222,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebserviceJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BMDS02" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebserviceJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BMDS02" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebserviceJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BMDS02" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="itu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -306,11 +232,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.externalResources" />
+    <property name="options.lastSelected" value="Web Contexts" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -318,77 +244,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Tomcat Server.server">
-    <configuration default="false" name="ws" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dk.itu.smds.e2012.webservices.basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="dk.itu.smds.e2012.webservices.basic.ws" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="WebserviceJava" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="HelloService" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dk.itu.smds.e2012.webservices.basic.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="dk.itu.smds.e2012.webservices.basic.server.HelloService" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="WebserviceJava" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="HelloClient" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dk.itu.smds.e2012.webservices.basic.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="dk.itu.smds.e2012.webservices.basic.server.HelloClient" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="WebserviceJava" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Glassfish Server.Server">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -485,6 +345,25 @@
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -511,25 +390,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -654,17 +514,25 @@
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
       </method>
     </configuration>
-    <configuration default="false" name="server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7">
+    <configuration default="false" name="Server" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Glassfish 3.1.2">
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
+      <deployment>
+        <artifact name="bmds03">
+          <settings />
+        </artifact>
+      </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_WebserviceJava" />
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="changeit" />
       </server-settings>
-      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <predefined_log_file id="GlassFish" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="52338" />
+        <option name="DEBUG_PORT" value="9009" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -714,13 +582,14 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method />
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="bmds03" />
+        </option>
+      </method>
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.server" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ws" />
-      <item index="2" class="java.lang.String" itemvalue="Application.HelloService" />
-      <item index="3" class="java.lang.String" itemvalue="Application.HelloClient" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Glassfish Server.Server" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -728,42 +597,61 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="d97c8c1c-9aef-4617-90e2-0b2c004f69eb" name="Default" comment="" />
       <created>1348496604702</created>
       <updated>1348496604702</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="13" y="49" width="1351" height="681" extended-state="0" />
+    <frame x="1371" y="2" width="1670" height="671" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23938224" sideWeight="0.95706373" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494244" sideWeight="0.21780303" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32818532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494244" sideWeight="0.67045456" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22469136" sideWeight="0.6718147" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32818532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494244" sideWeight="0.21780303" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -827,126 +715,73 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/common/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="426" selection-end="426" vertical-scroll-proportion="0.33231708">
-          <folding />
-        </state>
+        <state line="16" column="13" selection-start="426" selection-end="426" vertical-scroll-proportion="0.33231708" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/xml/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="44" selection-start="56" selection-end="56" vertical-scroll-proportion="0.048859935">
-          <folding />
-        </state>
+        <state line="3" column="44" selection-start="56" selection-end="56" vertical-scroll-proportion="0.048859935" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/io/StringWriter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="239" selection-end="239" vertical-scroll-proportion="-0.14329268">
-          <folding />
-        </state>
+        <state line="8" column="11" selection-start="239" selection-end="239" vertical-scroll-proportion="-0.14329268" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/com/sun/org/apache/xerces/internal/impl/XMLNSDocumentScannerImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.6938776">
-          <folding />
-        </state>
+        <state line="36" column="0" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.6938776" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/xml/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="39" selection-start="874" selection-end="874" vertical-scroll-proportion="0.54268295">
-          <folding />
-        </state>
+        <state line="44" column="39" selection-start="874" selection-end="874" vertical-scroll-proportion="0.54268295" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/xml/TaskSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="38" selection-start="961" selection-end="961" vertical-scroll-proportion="1.3658537">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="36" column="38" selection-start="961" selection-end="961" vertical-scroll-proportion="1.3658537" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/xml/Tasks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.5487805">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/server/HelloClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.5945122">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/server/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="130" selection-start="645" selection-end="645" vertical-scroll-proportion="-2.5238094">
-          <folding />
-        </state>
+        <state line="14" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.5487805" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/TrustcareRestClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="36" selection-start="326" selection-end="326" vertical-scroll-proportion="-0.7835366">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="14" column="36" selection-start="326" selection-end="326" vertical-scroll-proportion="-0.7835366" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/common/RestClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="125" selection-start="519" selection-end="519" vertical-scroll-proportion="-1.0121951">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="21" column="125" selection-start="519" selection-end="519" vertical-scroll-proportion="-1.0121951" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/TrustcareSoapClient.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/TestREST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="19" column="13" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="41" selection-start="526" selection-end="526" vertical-scroll-proportion="0.24390244">
+          <folding />
+        </state>
       </provider>
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dk/itu/smds/e2012/webservices/basic/client/HelloServiceClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="359" selection-end="359" vertical-scroll-proportion="0.5030488">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/tests/TestSoapClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="129" selection-start="564" selection-end="564" vertical-scroll-proportion="0.3809524">
+        <state line="32" column="49" selection-start="947" selection-end="947" vertical-scroll-proportion="0.68944097">
           <folding />
         </state>
       </provider>
@@ -957,10 +792,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>bmds03</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -968,7 +805,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (WebserviceJava)|Web</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -980,7 +817,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>postgres</last-edited>
+          <last-edited>scala-compiler</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1004,7 +841,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|WebserviceJava</last-edited>
+          <last-edited>Bmds03</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1028,6 +865,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -14,9 +14,12 @@ import java.util.ArrayList;
 public class TrustcareRestClient {
 
     private RestClient rc;
+    
     private TaskSerializer taskSer;
-
-    public TrustcareRestClient(){
+    
+    private static TrustcareRestClient instance;
+    
+    private TrustcareRestClient(){
         rc = new RestClient();
         taskSer = new TaskSerializer();
     }
@@ -46,13 +49,22 @@ public class TrustcareRestClient {
 
         rc.DoRestCall("http://trustcare.itu.dk/task-manager-rest/tasks/createtask", "POST", taskXml);
     }
+    
+    public void createTask(Task task) throws JAXBException {
+        String taskXml = taskSer.serialize(task);
 
-
-    public void createTask(String taskXml){
         rc.DoRestCall("http://trustcare.itu.dk/task-manager-rest/tasks/createtask", "POST", taskXml);
     }
 
+    public void createTask(String taskXml){
+    	System.out.println("SENDING "+taskXml);
+        rc.DoRestCall("http://trustcare.itu.dk/task-manager-rest/tasks/createtask", "POST", taskXml);
+    }
 
+    public static TrustcareRestClient getInstance(){
+    	if(instance == null) instance = new TrustcareRestClient();
+    	return instance;
+    }
 
 
 
