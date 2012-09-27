@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="exploded-ear" name="bmds03">
-    <output-path>$PROJECT_DIR$/classes/artifacts/bmds03</output-path>
-    <root id="root" />
-  </artifact>
-</component>

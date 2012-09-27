@@ -7,7 +7,6 @@ import javax.ws.rs.core.UriBuilder;
 import javax.xml.bind.JAXBException;
 
 import com.sun.jersey.api.client.Client;
-import com.sun.jersey.api.client.ClientHandlerException;
 import com.sun.jersey.api.client.UniformInterfaceException;
 import com.sun.jersey.api.client.WebResource;
 import com.sun.jersey.api.client.config.ClientConfig;
@@ -25,13 +24,12 @@ public class TestREST {
 		TaskSerializer ser = new TaskSerializer();
 		
 		Tasks tasks = new Tasks();
-		Task task = new Task("task1", "A task of stuff", "20-02-2012", "Assigned", "IT's assigned");
-		task.attendants.add("E aal");
-		
+		Task task = new Task("assn-01", "mandatory assignment 01", "17-09-2012", "not-executed", "Work out mandatory assignment and submit");
+		task.attendants.add("stud01");
 		tasks.tasks.add(task);
 		
 		WebResource service = client.resource(getBaseURI());
-		String xml = ser.serialize(task);
+		String xml = ser.serialize(tasks);
 		System.out.println("SENDING "+xml);
 		try {
 

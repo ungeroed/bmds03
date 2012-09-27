@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="TaskManagerServices">
+    <output-path>$PROJECT_DIR$/classes/artifacts/TaskManagerServices</output-path>
+    <root id="root">
+      <element id="module-output" name="TaskManagerServices" />
+      <element id="module-output" name="TaskManagerServicesClient" />
+    </root>
+  </artifact>
+</component>

@@ -14,7 +14,7 @@ import dk.itu.smds.e2012.webservices.basic.xml.Tasks;
 import dk.itu.smds_e2012.lab.week_04.ITaskManagerService;
 import dk.itu.smds_e2012.lab.week_04.ITaskManagerServiceProxy;
 
-@WebService(name="SoapService", targetNamespace = "soap",serviceName="SoapService")
+@WebService(name="SoapService", targetNamespace = "SoapService",serviceName="SoapService")
 public class SoapService {
 	
 	ITaskManagerService proxy = new ITaskManagerServiceProxy();
@@ -23,8 +23,8 @@ public class SoapService {
 	
 	TaskSerializer ser = new TaskSerializer();
 	
-	@WebMethod(operationName="GetAttendantTasks")
-	public String GetAttendantTasks(String attendantId, int serviceOption) throws RemoteException, JAXBException{
+	@WebMethod(operationName="getAttendantTasks")
+	public String getAttendantTasks(String attendantId, int serviceOption) throws RemoteException, JAXBException{
 	
 		if(serviceOption == 1) return proxy.getAttendantTasks(attendantId);
 		
@@ -38,8 +38,8 @@ public class SoapService {
 		}
 		
 		if(serviceOption == 3){
-			String soapResponse = GetAttendantTasks(attendantId, 1);
-			String restResponse = GetAttendantTasks(attendantId, 2);
+			String soapResponse = getAttendantTasks(attendantId, 1);
+			String restResponse = getAttendantTasks(attendantId, 2);
 			
 			return "Soap response: \n"+soapResponse+"\n REST response: \n"+restResponse;
 		}
@@ -47,8 +47,8 @@ public class SoapService {
 		return "Error";
 	}
 	
-	@WebMethod(operationName="CreateTask")
-	public void CreateTask(String taskXml, int serviceOption) throws RemoteException{
+	@WebMethod(operationName="createTask")
+	public void createTask(String taskXml, int serviceOption) throws RemoteException{
 		
 		if(serviceOption == 1) proxy.createTask(taskXml);
 		if(serviceOption == 2) trc.createTask(taskXml);
@@ -58,8 +58,8 @@ public class SoapService {
 		}
 	}
 	
-	@WebMethod(operationName="DeleteTask")
-	public void DeleteTask(String taskId, int serviceOption) throws RemoteException{
+	@WebMethod(operationName="deleteTask")
+	public void deleteTask(String taskId, int serviceOption) throws RemoteException{
 		if(serviceOption == 1) proxy.deleteTask(taskId);
 		if(serviceOption == 2) trc.deleteTask(taskId);
 		if(serviceOption == 3){

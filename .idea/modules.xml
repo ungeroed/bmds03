@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Bmds03.iml" filepath="$PROJECT_DIR$/Bmds03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TaskManagerServices/TaskManagerServices.iml" filepath="$PROJECT_DIR$/TaskManagerServices/TaskManagerServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TaskManagerServicesClient/TaskManagerServicesClient.iml" filepath="$PROJECT_DIR$/TaskManagerServicesClient/TaskManagerServicesClient.iml" />
     </modules>
   </component>
 </project>
