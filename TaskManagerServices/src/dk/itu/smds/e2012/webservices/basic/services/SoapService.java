@@ -2,6 +2,7 @@ package dk.itu.smds.e2012.webservices.basic.services;
 
 import java.rmi.RemoteException;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -9,8 +10,8 @@ import javax.xml.bind.JAXBException;
 
 import dk.itu.smds.e2012.webservices.basic.client.TrustcareRestClient;
 import dk.itu.smds.e2012.webservices.basic.xml.Task;
+import dk.itu.smds.e2012.webservices.basic.xml.TaskList;
 import dk.itu.smds.e2012.webservices.basic.xml.TaskSerializer;
-import dk.itu.smds.e2012.webservices.basic.xml.Tasks;
 import dk.itu.smds_e2012.lab.week_04.ITaskManagerService;
 import dk.itu.smds_e2012.lab.week_04.ITaskManagerServiceProxy;
 
@@ -29,11 +30,10 @@ public class SoapService {
 		if(serviceOption == 1) return proxy.getAttendantTasks(attendantId);
 		
 		if(serviceOption == 2) {
-			ArrayList<Task> taskList = trc.getAttendantTasks(attendantId);
-			Tasks tasks = new Tasks();
-			for(Task task : taskList)
-				tasks.tasks.add(task);
-					
+			List<Task> taskList = trc.getAttendantTasks(attendantId);
+			
+			TaskList tasks = new TaskList(taskList);
+
 			return ser.serialize(tasks);
 		}
 		

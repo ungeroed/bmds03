@@ -10,9 +10,9 @@ import java.io.*;
 public class TaskSerializer {
 
 
-    public Tasks deserialize(String xml) throws JAXBException {
+    public TaskList deserialize(String xml) throws JAXBException {
 
-        JAXBContext jaxbContext = JAXBContext.newInstance(Tasks.class);
+        JAXBContext jaxbContext = JAXBContext.newInstance(TaskList.class);
 
         // convert String into InputStream
         InputStream is = new ByteArrayInputStream(xml.getBytes());
@@ -20,7 +20,7 @@ public class TaskSerializer {
         // read it with BufferedReader
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
-        Tasks tasks = (Tasks) jaxbContext.createUnmarshaller().unmarshal(br);
+        TaskList tasks = (TaskList) jaxbContext.createUnmarshaller().unmarshal(br);
 
         return tasks;
     }
@@ -40,9 +40,9 @@ public class TaskSerializer {
         return task;
     }
 
-    public String serialize(Tasks tasks) throws JAXBException {
+    public String serialize(TaskList tasks) throws JAXBException {
 
-        JAXBContext jaxbContext = JAXBContext.newInstance(Tasks.class);
+        JAXBContext jaxbContext = JAXBContext.newInstance(TaskList.class);
 
         StringWriter writer = new StringWriter();
 

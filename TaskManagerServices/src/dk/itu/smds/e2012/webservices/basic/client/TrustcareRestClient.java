@@ -10,6 +10,7 @@ import java.util.ArrayList;
  * Author: csp
  *
  */
+import java.util.List;
 
 public class TrustcareRestClient {
 
@@ -24,30 +25,24 @@ public class TrustcareRestClient {
         taskSer = new TaskSerializer();
     }
 
-    public ArrayList<Task> getAllTasks() throws JAXBException {
+    public List<Task> getAllTasks() throws JAXBException {
         String xml = rc.DoRestCall("http://trustcare.itu.dk/task-manager-rest/tasks/", "GET", "");
 
-        Tasks tasks = taskSer.deserialize(xml);
+        TaskList tasks = taskSer.deserialize(xml);
 
-        return tasks.tasks;
+        return tasks.getList();
     }
 
-    public ArrayList<Task> getAttendantTasks(String attendantId) throws JAXBException {
+    public List<Task> getAttendantTasks(String attendantId) throws JAXBException {
         String xml = rc.DoRestCall("http://trustcare.itu.dk/task-manager-rest/tasks/attendant/"+attendantId, "GET", "");
 
-        Tasks tasks = taskSer.deserialize(xml);
+        TaskList tasks = taskSer.deserialize(xml);
 
-        return tasks.tasks;
+        return tasks.getList();
     }
 
     public void deleteTask(String taskId){
         rc.DoRestCall("http://trustcare.itu.dk/task-manager-rest/tasks/DeleteTask?taskId="+taskId, "DELETE", "");
-    }
-
-    public void createTask(Tasks task) throws JAXBException {
-        String taskXml = taskSer.serialize(task);
-
-        rc.DoRestCall("http://trustcare.itu.dk/task-manager-rest/tasks/createtask", "POST", taskXml);
     }
     
     public void createTask(Task task) throws JAXBException {

@@ -1,6 +1,6 @@
 package dk.itu.smds.e2012.webservices.basic.server.resources;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -18,7 +18,7 @@ import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 
 import dk.itu.smds.e2012.webservices.basic.xml.Task;
-import dk.itu.smds.e2012.webservices.basic.xml.Tasks;
+import dk.itu.smds.e2012.webservices.basic.xml.TaskList;
 import dk.itu.smds.e2012.webservices.basic.client.TrustcareRestClient;
 import dk.itu.smds_e2012.lab.week_04.*;
 
@@ -37,9 +37,9 @@ public class TasksRessource {
 	
 	@GET
 	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
-	public ArrayList<Task> getTaskXML() throws JAXBException{
+	public List<Task> getTaskXML() throws JAXBException{
 		
-		ArrayList<Task> tasks =  trc.getAllTasks();
+		List<Task> tasks =  trc.getAllTasks();
 		
 		return tasks;
 	}
@@ -47,27 +47,19 @@ public class TasksRessource {
 	@GET
 	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
 	@Consumes({MediaType.TEXT_PLAIN})
-	public ArrayList<Task> getTaskXML(String attendantId) throws JAXBException{
+	public List<Task> getTaskXML(String attendantId) throws JAXBException{
 		
-		ArrayList<Task> tasks =  trc.getAttendantTasks(attendantId);
+		List<Task> tasks =  trc.getAttendantTasks(attendantId);
 		
 		return tasks;
 	}
 	
+	
 	@POST
 	@Consumes({MediaType.APPLICATION_XML})
 	public void createTask(JAXBElement<Task> task) throws JAXBException{
-		
-		// trc.createTask(task.getValue()); // DOESN't WORK???
-		
+		trc.createTask(task.getValue()); // Doesn't work ?!?!?
 	}
-	
-	/* @POST
-	@Consumes({MediaType.APPLICATION_XML})
-	public void createTasks(JAXBElement<Tasks> tasks) throws JAXBException{
-		
-		// trc.createTask(tasks.getValue()); // Doesn't work ?!?!?
-	}*/
 	
 	@DELETE
 	@Consumes({MediaType.TEXT_PLAIN})
