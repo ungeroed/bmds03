@@ -47,10 +47,5 @@ public class TasksRessource {
 	public void createTask(JAXBElement<Task> task) throws JAXBException{
 		trc.createTask(task.getValue()); // Doesn't work ?!?!?
 	}
-	
-	@DELETE
-	@Consumes({MediaType.TEXT_PLAIN})
-	public void deleteTask(String taskId){
-		trc.deleteTask(taskId);
-	}
+
 }

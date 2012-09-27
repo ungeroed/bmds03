@@ -3,6 +3,7 @@ package dk.itu.smds.e2012.webservices.basic.server.resources;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -26,5 +27,10 @@ public class TaskParamRessource {
 		List<Task> tasks =  trc.getAttendantTasks(attendantId);
 		
 		return tasks;
+	}
+	
+	@DELETE
+	public void deleteTask(@PathParam("PARAM") String taskId){
+		trc.deleteTask(taskId);
 	}
 }
