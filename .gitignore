@@ -1,7 +1,8 @@
 *.class
 idea
 idea_modules
+build
+classes
 # Package Files #
-*.jar
 *.war
 *.ear
